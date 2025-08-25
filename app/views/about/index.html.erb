@@ -1,0 +1,100 @@
+<header class="d-flex justify-content-center">
+  <h1 class="h1">Danna Collazos's Webpage</h1>
+</header>
+<div class="container d-flex flex-column flex-md-row">
+  <aside class="d-flex flex-column align-items-center border-right border-dark">
+    <h2>Skills table</h2>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td class="text-danger">Basic</td>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td class="text-danger">Basic</td>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td class="text-danger">Basic</td>
+        </tr>
+        <tr>
+          <td>Git</td>
+          <td class="text-danger">Basic</td>
+        </tr>
+        <tr>
+          <td>Excel</td>
+          <td class="text-success">Advanced</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td class="text-danger">Basic</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td class="text-danger">Basic</td>
+        </tr>
+        <tr>
+          <td>Spanish</td>
+          <td class="text-primary">Native</td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+  <main>
+    <section>
+      <h2>Personal information</h2>
+
+      <div class="container fst-italic d-flex flex-column flex-md-row">
+        <%= image_tag "profile.jpeg", height: 300, width: 300 %>
+        <ol>
+          <li>
+            <b>Name:</b> Danna Collazos
+          </li>
+          <li>
+            <b>Major:</b> Industrial
+          </li>
+          <li>
+            <b>Year or University Enrollment:</b> 2023
+          </li>
+          <li>
+            <b>Github:</b> <a href="https://github.com/danna-collazos">danna-collazos</a>
+          </li>
+          <section>
+            <h3>Summary</h3>
+            <p>
+            I'm mainly interested in industrial engineering area, but I'm open to explore other engineering topics where I could participate.
+            I'm an enthusiast, organized and creative person, with teamwork skills, manage projects and promote wellness in the groups I participate.
+
+            I'm passionate about inclusion and sport projects as well, because I believe that respect and mutual support builds secure and better spaces for everyone.
+            Currently I'm looking for opportunities where I can apply my skills and habilities, grow professionally and deliver all my enthusiasm and commitment.
+            </p>
+          </section>
+        </ol>
+      </div>
+      <div class="container">
+        <label>Do you like dogs?</label>
+        <input type="text">
+        <button>Submit</button>
+      </div>
+
+    </section>
+    <section id="hidden-text" class="d-none">
+      <h2>That answer is a 'yes' for me</h2>
+      <%= image_tag "dog.jpeg",  height: 300, width: 300 %>
+      <p>
+        This is my beloved dog, his name is Julian, it's the best dog in the world!
+      </p>
+
+    </section>
+    <section id="question-text" class="d-none">
+      <h1>Why don't you like dogs? 😢</h1>
+    </section>
+  </main>
+</div>
